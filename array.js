@@ -21,7 +21,7 @@ console.log(a[15]);// says undefined.
 
 
 
-//Array Methods
+// Array Methods
 
 /*
 let arr = [1,2,3,4,5];
