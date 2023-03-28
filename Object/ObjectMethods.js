@@ -4,13 +4,13 @@ let emp = {
     age: 24
 }
 
-let keys = Object.keys(emp); // Extract all keys of the object
+let keys = Object.keys(emp); // Extract all keys of the object and return in the form of string
 console.log(keys);
 
-let values = Object.values(emp); // Extract all the values of the object
+let values = Object.values(emp); // Extract all the values of the object and return in the form of array
 console.log(keys);
 
-let entries = Object.entries(emp); // Extract key -  values pair of the objects
+let entries = Object.entries(emp); // Extract key -  values pair of the objects and return in the form of array
 console.log(entries);
 
 Object.freeze(emp); // stop add, delete and update of an object.

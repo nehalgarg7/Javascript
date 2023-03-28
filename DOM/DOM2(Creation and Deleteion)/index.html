@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM part 2</title>
+</head>
+<body>
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+    <script>
+        // Append Child
+
+        // Creation Part
+        let title = document.createElement("h1");
+        title.className = "C1";
+        title.style.fontSize = "25px";
+        title.textContent = "Pw skills, Namaste";
+        console.log(title);
+
+        // Insertion Part
+        document.body.appendChild(title); 
+
+        // Remove Child
+
+        //Selection
+        let ul = document.querySelector("ul");
+        console.log(ul);
+
+        let lists = document.querySelectorAll("li");
+        console.log(lists);
+
+        // removing
+        for(list of lists) //Focus Here
+        {
+            ul.removeChild(list);
+        }
+    </script>
+</body>
+</html>

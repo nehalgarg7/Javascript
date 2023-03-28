@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM part 3</title>
+</head>
+<body>
+    <!-- Normal HTML -->
+    <h1>Hello Janta</h1>
+    <p id="js"></p>
+
+
+    <button onclick="hey()" id="jsss">Submit</button>
+    <!-- // Focus ... If we want to add any eventlistener to button just put the name of that eventlistener by adding on to it in the starting.
+    onEventName. -->
+
+    
+    <!-- JavaScript -->
+    <script>
+        /*
+        The addEventListener() method attaches an event handler to a document.
+        */
+
+        document.addEventListener("dblclick",hello); // Take two parameter (event,function) // return value none.
+        function hello()
+        {
+            document.getElementById("js").innerText = "Namaste Sir";
+        }
+
+
+
+        // For button {Here we don't need to add eventlistener since already event is added on button tag}
+        function hey()
+        {
+            document.getElementById("jsss").innerText="Log Out";
+            document.getElementById("jsss").style.color="red";
+            document.getElementById("jsss").style.backgroundColor="black";
+            document.getElementById("jsss").style.padding="16px";
+            document.getElementById("jsss").style.border="solid yellow";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM part 1</title>
+</head>
+
+<body>
+    <!-- id -->
+    <p id="one"><span>Hi! I am span Tag</span>Hello</p>
+
+    <!-- Class -->
+    <ul>
+        <li class="tech">One</li>
+        <li class="tech">Two</li>
+        <li class="tech">Three</li>
+    </ul>
+
+    <!-- TagName -->
+    <h4>Hey</h4>
+    <h4>Namaste</h4>
+    <h4>Hola</h4>
+
+    <!-- QuerySelector -->
+    <h2>Hello</h2>
+    <h2 class="classs">Holla</h2>
+    <h2 id="ids">Hey</h2>
+    <script>
+        // Id
+        let var1 = document.getElementById("one");
+        console.log(var1.innerText);
+
+        // innerText (isme Tag ke andar ke text ko sirf pakadta h)
+        // innerHTML (isme Tag ke andar ke tags + text ko pakadta h)
+
+        // Class
+        let var2 = document.getElementsByClassName("tech");
+        console.log(var2[0].innerText);
+
+        var2[0].innerHTML = "nodejs";
+        console.log(var2[0].innerText);
+
+        // TagName
+
+        let var3 = document.getElementsByTagName("h4");
+        console.log(var3[1].innerHTML);
+        var3[1].innerText = "Hello";
+        console.log(var3[1].innerHTML);
+
+        var3[2].style.color = "red"; // Can also change the CSS.
+
+        //QuerySelector
+        /*
+        1. The querySelector() method returns the first element that matches a CSS selector.
+        2. To return all matches (not only the first), use the querySelectorAll() instead.
+        3. Both querySelector() and querySelectorAll() throw a SYNTAX_ERR exception if the selector(s) is invalid. and if given selector is valid but not in the HTML file it returned null.
+        */
+        let var4 = window.document.querySelector(".classs"); // Focus here
+        console.log(var4);
+
+        var4.className = "hello"; // changing the className
+
+        var4.classList = "hola hello helo"; // can set multiple class using classList
+        var4.setAttribute("id","js"); // to add attribute to the HTML tag we use setAttribute in the JS. 
+
+        // Here we pass(attribute_name,value_of_attribute)
+        
+    </script>
+</body>
+
+</html>
