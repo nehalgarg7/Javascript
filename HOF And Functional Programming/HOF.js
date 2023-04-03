@@ -6,9 +6,9 @@ const powerTwo = (n) => {
     return n ** 2; // n power 2
 }
 
-function powerCube (powerTwo,n)
+function powerCube (powerTwo,n) // function is pass a parameter
 {
-    return powerTwo(n) * n;
+    return powerTwo(n) * n; 
 }
 
 // what happen here 
@@ -63,3 +63,11 @@ const sumArray = arr => {
 }
 
 console.log(sumArray(myNums));
+
+function oneMoreHello(){
+    console.log("Hello hitesh !" , Math.random());
+}
+
+setInterval(oneMoreHello, 1000); // run after every 1s repeateadly.
+
+//setTimeout(oneMoreHello,2000); // run after 2s and stop.
