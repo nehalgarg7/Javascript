@@ -38,3 +38,5 @@ function manyArguments()
 
 manyArguments(1,2,3,4);
 manyArguments(1,2,3,4,7,8,9);
+
+// custome design object are not iterable.
