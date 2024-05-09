@@ -1,0 +1,10 @@
+if (username === undefined)
+{
+
+}
+
+or you can write
+
+if (!username)
+
+in js we consider "" & undefined as a false value.

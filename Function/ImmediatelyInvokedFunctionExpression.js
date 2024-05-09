@@ -15,3 +15,17 @@ Note : After writing the function put it under () and for invoking or calling it
 {
     console.log(x+x);
 })(5);
+
+// global scope ke pollution ko hatane ke liye iffy ka use krte h. URL :https://youtu.be/sscX432bMZo?t=20896 
+
+// Immediately Invoked Function Expressions (IIFE)
+
+
+(function chai(){
+    // named IIFE
+    console.log(`DB CONNECTED`);
+})();
+
+( (name) => {
+    console.log(`DB CONNECTED TWO ${name}`);
+} )('hitesh')
