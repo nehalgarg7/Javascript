@@ -19,6 +19,6 @@ for(let i=0; i<2; i++)
         var b = 6;
     }
 
-    console.table([a,b]);
+console.table([a,b]);
 
     

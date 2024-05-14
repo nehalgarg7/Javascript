@@ -1,5 +1,5 @@
-// OOPs in JS are completely different that other progrramming language.
-
+// OOPs in JS are completely different that other programming language.
+// But behind the scene its is based on prototype based inheritance
 class Product {
     // properties and behaviour
     // name;
